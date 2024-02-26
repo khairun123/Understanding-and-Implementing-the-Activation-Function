@@ -56,18 +56,14 @@ Value Range : 0 to 1
 
 Python code implementations
 
->import matplotlib.pyplot as plt
->
->import numpy as np
->
->def sigmoid(x):
->
->s=1/(1+np.exp(-x))
->
->ds=s*(1-s)
->
->return s,ds
->
+``` python
+import matplotlib.pyplot as plt
+import numpy as np
+def sigmoid(x):
+s=1/(1+np.exp(-x))
+ds=s*(1-s)
+return s,ds```
+
 >
 ![<img width="848" alt="image" src="https://github.com/khairun123/Understanding-and-Implementing-the-Activation-Function/assets/128392550/2984a462-0a8e-4523-a3b9-03cf3b00630e">]
 
@@ -83,18 +79,14 @@ The tanh activation function gives higher values of gradient during training and
 
 Python code implementations
 
->import matplotlib.pyplot as plt
->
->import numpy as np
->
->def tanh(x):
->
->s=(2/(1+np.exp(-2*x)))-1
->
->ds=(1-s**2)
->
->return s,ds
->
+``` python
+import matplotlib.pyplot as plt
+import numpy as np
+def tanh(x):
+s=(2/(1+np.exp(-2*x)))-1
+ds=(1-s**2)
+return s,ds```
+
 >
 ![<img width= "610" alt="image" src="https://github.com/khairun123/Understanding-and-Implementing-the-Activation-Function/assets/128392550/536ed184-1b68-43dd-a3f8-4c55ca54f0ca">]
 
@@ -113,17 +105,12 @@ Value Range :- [0, inf)
 
 Python code implementations
 
->import matplotlib.pyplot as plt
->
->import numpy as np
->
->def relu_activation(x):
->
->return max(0,x)
->
->def relu_derivative(x):
->
->return 1 if x>=0  else 0
+```import matplotlib.pyplot as plt
+import numpy as np
+def relu_activation(x):
+return max(0,x)
+def relu_derivative(x):
+return 1 if x>=0  else 0```
 
 
 ![image](https://github.com/khairun123/Understanding-and-Implementing-the-Activation-Function/assets/128392550/0c0a2ecb-7a1c-4c7a-a630-a406d16ab0c1)]
